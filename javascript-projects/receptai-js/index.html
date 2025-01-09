@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="section">
+        <h2>Pasirinkite recepta:</h2>
+        <div class="cardContainer">
+          <div class="card" id="1">
+            <svg
+              id="svg1"
+              class="hide"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261" />
+              <line
+                x1="6.35355"
+                y1="9.64645"
+                x2="12.3536"
+                y2="15.6464"
+                stroke="white"
+              />
+              <line
+                x1="11.6464"
+                y1="15.6464"
+                x2="19.6464"
+                y2="7.64645"
+                stroke="white"
+              />
+            </svg>
+            <img src="./images/1.jpg" alt="vistiena su salotom" />
+            <h3>Vištiena su salotom</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              architecto?
+            </p>
+          </div>
+          <div class="card" id="2">
+            <svg
+              id="svg2"
+              class="hide"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261" />
+              <line
+                x1="6.35355"
+                y1="9.64645"
+                x2="12.3536"
+                y2="15.6464"
+                stroke="white"
+              />
+              <line
+                x1="11.6464"
+                y1="15.6464"
+                x2="19.6464"
+                y2="7.64645"
+                stroke="white"
+              />
+            </svg>
+            <img src="./images/2.jpg" alt="Tortas su mėlynėmis" />
+            <h3>Tortas su mėlynėmis</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              architecto?
+            </p>
+          </div>
+          <div class="card" id="3">
+            <svg
+              id="svg3"
+              class="hide"
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261" />
+              <line
+                x1="6.35355"
+                y1="9.64645"
+                x2="12.3536"
+                y2="15.6464"
+                stroke="white"
+              />
+              <line
+                x1="11.6464"
+                y1="15.6464"
+                x2="19.6464"
+                y2="7.64645"
+                stroke="white"
+              />
+            </svg>
+            <img src="./images/3.jpg" alt="Makaronai su mėsa" />
+            <h3>Makaronai su mėsa</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              architecto?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2 id="portionTitle">Kiek porcijų gaminsite?</h2>
+        <div class="input-container">
+          <input type="number" min="1" max="10" value="1" id="portionInput" />
+          <button id="portionButton" onclick="updateRecipeAmount()">Pateikti</button>
+        </div>
+        <p id="sliderValue"></p>
+      </div>
+
+      <div class="section">
+        <h2>Jums reikės šių ingredientų, tokiais kiekiais:</h2>
+        <div id="displayScreen"></div>
+      </div>
+    </div>
+  </body>
+</html>

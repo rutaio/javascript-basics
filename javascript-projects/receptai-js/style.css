@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  padding-top: 20px;
+  background-color: #efefef;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 800px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 40px 40px;
+  position: relative;
+}
+
+.section h2 {
+  color: #000;
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.card {
+  width: 230px;
+  height: 350px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card svg {
+  position: absolute;
+  left: 210px;
+  top: -15px;
+  transform: scale(1.5);
+}
+
+.card img {
+  width: 230px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 5px;
+}
+
+#portionTitle {
+  margin-bottom: 50px;
+}
+
+#sliderValue {
+  position: absolute;
+  top: 90px;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+#displayScreen {
+  width: 400px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#portionInput {
+  width: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#portionInput:focus {
+  border-color: #0fc261;
+}
+
+#portionButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0fc261;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#portionButton:hover {
+  background-color: #0aa94f;
+}
+
+#portionButton:active {
+  transform: scale(0.98);
+}
+
+#sliderValue {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
