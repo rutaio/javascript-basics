@@ -25,17 +25,22 @@ weatherForm.addEventListener('submit', async (event) => {
 });
 
 // function to get a weather data from another website:
+// async leidzia kontroliuoti pazada:
 async function getWeatherData(city) {
   // we take a ulr from https://openweathermap.org/current and add our variables in ${}:
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
   // we can use await because we are in async function here:
+  // fetch is a promise (returns resolve or reject):
+  // palauks kol funkcija padarys ka turi padaryti (laukia):
   const response = await fetch(apiUrl);
 
+  // suveiks tik resolve atveju:
   // we check through inspect and console, if ok is true or false...
   if (!response.ok) {
-    // if response is not ok (means - false)
-    throw new Error('Could not fetch weather data');
+    // if response is not ok (means - false):
+    // sukuria reject:
+    throw new Error('Could not fetch weather data. Try again?');
   }
   // if our response is true, return an object in json format (to our event listener):
   return await response.json();
